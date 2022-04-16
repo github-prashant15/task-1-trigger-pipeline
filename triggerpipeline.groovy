@@ -24,7 +24,7 @@ pipeline {
         } 
         stage('Prod') {
             steps {
-                ec 'Prod stage is running...'
+                echo 'Prod stage is running...'
             }
         } 
     }
