@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Pull') {
             steps {
-                echo 'Pull stage is running...'
+                git 'https://github.com/github-prashant15/task-1-trigger-pipeline.git'
             }
         }
         stage('Build') {
