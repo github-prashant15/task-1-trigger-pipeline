@@ -22,9 +22,11 @@ pipeline {
                 echo 'Deploy stage is running...'
             }
         } 
-        stage('Email Notification'){
+        stage('Email Notification') {
+            steps {
                 mail bcc: '', body: '''sent the mail, whenever pipeline is  failed, test, build...
                 Thank You''', cc: '', from: '', replyTo: '', subject: 'trigger build', to: 'cloudengg625@gmail.com'
+            }
         }
 
         stage('Prod') {
