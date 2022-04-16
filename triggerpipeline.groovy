@@ -31,7 +31,7 @@ pipeline {
 
         stage('Prod') {
             steps {
-                echo 'Prod stage is running...'
+                ec 'Prod stage is running...'
             }
         } 
     }
