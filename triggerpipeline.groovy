@@ -7,7 +7,7 @@ pipeline {
                 echo 'Pull stage is running...'
             }
         }
-        tage('Build') {
+        stage('Build') {
             steps {
                 echo 'Build stage is running...'
             }
