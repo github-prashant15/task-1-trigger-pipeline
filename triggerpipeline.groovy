@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                ec 'Deploy stage is running...'
+                e 'Deploy stage is running...'
             }
         } 
         stage('Email Notification') {
