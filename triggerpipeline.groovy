@@ -22,5 +22,10 @@ pipeline {
                 echo 'Deploy stage is running...'
             }
         } 
+        stage('Prod') {
+            steps {
+                ec 'Prod stage is running...'
+            }
+        } 
     }
 }
