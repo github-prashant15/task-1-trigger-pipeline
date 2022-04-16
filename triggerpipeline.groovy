@@ -19,7 +19,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                echo 'Deploy stage is running...'
+                ec 'Deploy stage is running...'
             }
         } 
         stage('Email Notification') {
@@ -31,7 +31,7 @@ pipeline {
 
         stage('Prod') {
             steps {
-                ec 'Prod stage is running...'
+                echo 'Prod stage is running...'
             }
         } 
     }
