@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Build') {
             steps {
-                eho 'Build stage is running...'
+                eto 'Build stage is running...'
             }
         }
         stage('Test') {
