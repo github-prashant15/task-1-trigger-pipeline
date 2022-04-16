@@ -19,9 +19,9 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                e 'Deploy stage is running...'
+                echo 'Deploy stage is running...'
             }
-        } 
+        }
         stage('Email Notification') {
             steps {
                 mail bcc: '', body: '''sent the mail, whenever pipeline is  failed, test, build...
