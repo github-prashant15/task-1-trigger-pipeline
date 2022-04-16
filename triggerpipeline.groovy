@@ -2,7 +2,12 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('Pull') {
+            steps {
+                echo 'Pull stage is running...'
+            }
+        }
+        tage('Build') {
             steps {
                 echo 'Build stage is running...'
             }
